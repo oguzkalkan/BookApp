@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.2.1_955b81c22ec68d7771cb3ecff3c84c0057a4d54e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.2.1_4ffaacd80e7d3bf2629da0ffd5a925cba732492f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.2.1_1a27cddc3847cebb38b36f30908faf95c506fdc6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.1_3c10b97cf5d5c72dc942f241d91ad65bee588868.jar" />
+    </item>
+    <item
+        jar="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.2.1_604cf7b4e2e224b651108d983dfcafa84b0f81bb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Oguz\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.1_f2e2c3599896a56267556f1d7067b1bb70c9e4ba.jar" />
+    </item>
+    <item
+        jar="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.2.1_74db56687c068dca61f1ea47ff54041749a83fff.jar" />
+    </item>
+    <item
+        jar="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="C:\Users\Oguz\Desktop\MyApplication14\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.2.1_380ce7136f6a185b91c5068101a7b58672bb9bdf.jar" />
+    </item>
+
+</items>
