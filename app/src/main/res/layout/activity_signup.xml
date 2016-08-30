@@ -7,21 +7,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.asktroapp.myapplication.DashBoard">
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnAdd"
-        android:onClick="AddUser"
-        android:text="Kullanıcı Ekle"/>
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_below="@+id/btnAdd"
-        android:layout_centerHorizontal="true" />
-
+    tools:context="com.asktroapp.myapplication.SignUpActivity">
 
 </RelativeLayout>
