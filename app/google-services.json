@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "207348733995",
+    "firebase_url": "https://login-cd62a.firebaseio.com",
+    "project_id": "login-cd62a",
+    "storage_bucket": "login-cd62a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207348733995:android:c5dc1d3fa18161cf",
+        "android_client_info": {
+          "package_name": "com.asktroapp.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207348733995-nkld7p6j3fejd1t3jemnst69bkci6kmd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.asktroapp.myapplication",
+            "certificate_hash": "8E8D83A3119CF5D71817374D71A118E00B905F99"
+          }
+        },
+        {
+          "client_id": "207348733995-futvn9jaih2llqvaln1jqvussp8gc154.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs8yATMAnWrcSzoRsExW9L0c4vS9c2Z4o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207348733995-futvn9jaih2llqvaln1jqvussp8gc154.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

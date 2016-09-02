@@ -1,58 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.asktroapp.myapplication.Example">
+    android:padding="10dp"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/background_light">
 
 
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/TxtName"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="25dp"
-        />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Layout1"
+            android:layout_marginTop="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/TxtPassword"
-        android:layout_below="@+id/TxtName"
-        android:layout_marginLeft="25dp"
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
 
-        />
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/TxtName"
-        android:layout_toRightOf="@id/TxtPassword"
-        android:onClick="SendAccount"
-        android:text="Giriş"
-        android:textAllCaps="false"
-        android:layout_alignBottom="@+id/TxtPassword"
-        />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Layout2"
+            android:layout_below="@id/Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Login Button -->
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/FaceLogin"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/Btn_login"
+            android:layout_marginTop="20dip"
+            android:layout_alignParentEnd="false" />
+
+        <Button
+            android:id="@+id/Btn_login"
+            android:textAllCaps="false"
+            android:layout_below="@id/Layout2"
+            android:layout_centerInParent="true"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dip"
+            android:background="@color/colorAccent"
+            android:text="@string/btn_login"
+            android:textColor="@android:color/black"
+            android:layout_gravity="right" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/FaceLogin"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:text="@string/btn_link_to_register"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:layout_gravity="right" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kaydol"
-        android:id="@+id/textView"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="#111111"
-        android:layout_below="@+id/TxtPassword"
-        android:layout_alignStart="@+id/TxtPassword" />
+        android:id="@+id/Btn_reset_password"
+        android:layout_below="@id/btn_signUp"
+        android:layout_alignRight="@+id/btn_signUp"
+        android:layout_marginTop="70dip"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:background="#00ffffff"
+        android:text="@string/btn_forgot_password"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:layout_gravity="right"
+        android:layout_toEndOf="@+id/progressBar"
+        android:textAlignment="center"/>
 
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
 </RelativeLayout>
