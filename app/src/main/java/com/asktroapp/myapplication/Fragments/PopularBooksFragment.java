@@ -2,6 +2,7 @@ package com.asktroapp.myapplication.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,8 +39,16 @@ public class PopularBooksFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String value = PopularBooks[position];
+                FragmentManager fm = getFragmentManager();
+                PopularBooksDialogFragment dialogFragment = new PopularBooksDialogFragment();
+                Bundle args = new Bundle();
+                args.putString("key", "Kitap Adı : "+ value);
+                dialogFragment.setArguments(args);
+                dialogFragment.show(fm,"Books");
 
 
+
+//                Toast.makeText(getActivity(),value, Toast.LENGTH_SHORT).show();
             }
         });
 

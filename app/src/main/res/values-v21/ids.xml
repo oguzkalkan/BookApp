@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#7A1EA1</color>
-    <color name="colorPrimaryDark">#691A99</color>
-    <color name="colorAccent">#FFCCBC</color>
-    <color name="white">#FFFF</color>
+    <item name="item_click_support" type="id" />
 </resources>

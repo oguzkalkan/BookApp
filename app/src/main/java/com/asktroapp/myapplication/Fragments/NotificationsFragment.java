@@ -1,6 +1,6 @@
 package com.asktroapp.myapplication.Fragments;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -28,8 +28,8 @@ public class NotificationsFragment extends Fragment implements TabLayout.OnTabSe
 
         View view = inflater.inflate(R.layout.notifications_fragment, container, false);
 
-        toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
-        ((MainActivity)getActivity()).setSupportActionBar(toolbar);
+      //  toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+      //  ((MainActivity)getActivity()).setSupportActionBar(toolbar);
 
 
         tabLayout = (TabLayout) view.findViewById(R.id.NtabLayout);
@@ -40,7 +40,7 @@ public class NotificationsFragment extends Fragment implements TabLayout.OnTabSe
 
         viewPager = (ViewPager) view.findViewById(R.id.NotificationViewPager);
 
-        NotificationTabsPagerAdapter adapter = new NotificationTabsPagerAdapter(((MainActivity)getActivity()).getSupportFragmentManager(), tabLayout.getTabCount());
+        NotificationTabsPagerAdapter adapter = new NotificationTabsPagerAdapter(getChildFragmentManager(), tabLayout.getTabCount());
 
         viewPager.setAdapter(adapter);
 

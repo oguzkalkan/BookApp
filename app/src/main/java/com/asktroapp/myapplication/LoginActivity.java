@@ -14,6 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.asktroapp.myapplication.Fragments.HomepageFragment;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookActivity;
@@ -57,11 +58,11 @@ public class LoginActivity extends FragmentActivity {
         callbackManager = CallbackManager.Factory.create();
         loginButton = (LoginButton) findViewById(R.id.FaceLogin);
         //loginButton.setReadPermissions(Arrays.asList("email"));
-        loginButton.setReadPermissions(Arrays.asList("public_profile", "email","user_friends"));
+       // loginButton.setReadPermissions(Arrays.asList("public_profile", "email","user_friends"));
         LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-
+/*
                 GraphRequest request = GraphRequest.newMeRequest(
                         loginResult.getAccessToken(),
                         new GraphRequest.GraphJSONObjectCallback() {
@@ -89,7 +90,7 @@ public class LoginActivity extends FragmentActivity {
                 parameters.putString("fields", "id,name,email,gender,birthday");
                 request.setParameters(parameters);
                 request.executeAsync();
-
+*/
             }
 
             @Override

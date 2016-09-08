@@ -23,6 +23,8 @@ public class BookTabsPagerAdapter extends FragmentPagerAdapter{
         this.tabCount= tabCount;
     }
 
+
+
     @Override
     public Fragment getItem(int index) {
 
