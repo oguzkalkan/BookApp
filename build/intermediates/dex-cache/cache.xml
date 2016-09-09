@@ -1,2 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.0.2_7a525007c7212e1daa73dce1b1786bbe59846120.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.0.2_feabf1e88c80a9c6b8d191f8d9fa674c1f3ee5aa.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_a11de2fcac897ddb9e12d49f500e2dddb3a302d0.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.0.2_6ce7446d51ab8737e5f48be2f9581079bcb30ace.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.0.2_6eddb2d13849a1cecbef42993cc0d6e919c94c25.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fa472b7cbd3897bf6bed6068ac0b00e494987688">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-9.0.2_5a95efa0849d9fdf0df80a27643348228ad0024b.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_1570b3ed5b2dd0d2ecfb381e12842df07d6e3d70.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.2/285cb9c666f0f0f3dd8a1be04e1f457eb7b15113/jackson-annotations-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.2.2_697a314401f48f4a70b8cf221544b4ff0634289e.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.15.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="820605b42a2d3d9cb9e6c4cc7453fb4f802aedff">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.15.0_e4a666740f3756d98c5353b025e3445ff0e7525c.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/jackson-databind-2.2.2_11c91bdf77d8d8ed9e52546824a5e9418eabf9bb.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.2/d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b/jackson-core-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.2_58a4ebce7735ea0e3c85dc55e84ac9e9df4deff1.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_ee7ef7d37d50c45b8ce983b99ca9d39e6a1e9f0e.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.11/d37cb67277928cf59344b4196af8d9cee1f1a27c/tubesock-0.0.11.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/tubesock-0.0.11_7a91b756f747f635a533fb70ea1948695e0c6a1f.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.3.1/4d53b7d6983247af02b8fe7e4228fff555a5e828/firebase-client-jvm-2.3.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/firebase-client-jvm-2.3.1_d97099c552cb8d0bc9abf43406384194a643f19f.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-module-9.0.2_56ba05f7c95e94b3dbde19da4a6239ebf59b6053.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.0.2_24cd5c54012450ca22302512788ffc1271cf689c.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-common-9.0.2_99b1ec6157ba4a806cb026c648ca53179e836394.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.4.0_05b33664b5aedabb2c1f30af5d0e9a1e9eb88c6a.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.0.1_d2e1fc7ad55042991b02a0ab17bcf9fcb168cad8.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_a1a5a2dd3ae56a1c970c5d976b2f9d0b9ebf1117.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_9adae7bc034e40ead5a72d52fdeb7e80bb512cd3.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.0.2_18733a8622fcca8852b498d7d14fcc5284e65285.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.0.1_f31eca1b9ba06e5da55fae38fb8c691c5c6fd589.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.0.2_739798015a787c5fc39f4789efa881d4ab5813a8.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/bolts-applinks-1.4.0_a291641f9dd4f43b7c05679f6999c8589d813b31.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_563ea429aee98c90bc567ab174152b385d31f167.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-android/2.3.1/be29b24233711c419ce935aa0a1b12ebc49d1c9a/firebase-client-android-2.3.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="be29b24233711c419ce935aa0a1b12ebc49d1c9a">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/firebase-client-android-2.3.1_62fe0aa1b8ff1b58aa7285e231d3aa28f33fe570.jar" />
+    </item>
+    <item
+        jar="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/exploded-aar/com.android.support/customtabs/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="/Users/mobiltek26/Desktop/BookApp-v8/app/build/intermediates/pre-dexed/debug/com.android.support-customtabs-23.4.0_d98a78901b6c57495e9ce9101ec15db712679ce0.jar" />
+    </item>
+
+</items>

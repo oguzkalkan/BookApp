@@ -1,11 +1,15 @@
 package com.asktroapp.myapplication;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.widget.SearchView;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,23 +19,41 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
+import com.asktroapp.myapplication.Fragments.AddBookDialogFragment;
+import com.asktroapp.myapplication.Fragments.BooksFragment;
+import com.asktroapp.myapplication.Fragments.FriendsFragment;
+import com.asktroapp.myapplication.Fragments.HomepageFragment;
+import com.asktroapp.myapplication.Fragments.NotificationsFragment;
+import com.asktroapp.myapplication.Fragments.ProfileFragment;
+import com.asktroapp.myapplication.Fragments.RecAddedBooksDialogFragment;
+import com.asktroapp.myapplication.Fragments.SearchFragment;
+import com.asktroapp.myapplication.Fragments.SettingsFragment;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
-    private FirebaseAuth auth;
+        implements NavigationView.OnNavigationItemSelectedListener
+        {
+            private static String TAG = MainActivity.class.getSimpleName();
+
+            private FirebaseAuth auth;
+    Button btn1;
     Fragment fr;
+    FragmentManager fm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        fm = getSupportFragmentManager();
 
+      //  Fragment home = new HomepageFragment();
+      // fm.beginTransaction().replace(R.id.flContent, home).commit();
 
       Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-       // android.widget.SearchView search = (android.widget.SearchView) findViewById(R.id.search_view);
-      //  search.setLayoutParams(new android.widget.LinearLayout.LayoutParams(pos));
+       SearchView search = (SearchView) findViewById(R.id.search_view);
+
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -43,23 +65,43 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                AddBookDialogFragment dialogFragment = new AddBookDialogFragment();
+                dialogFragment.show(fm,"AddBook");
+
             }
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer,toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+                this, drawer,toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+        {
+            @Override
+            public void onDrawerOpened(View drawerView) {
+            super.onDrawerOpened(drawerView);
+
+            invalidateOptionsMenu();
+        }
+
+            @Override
+            public void onDrawerClosed(View drawerView) {
+            super.onDrawerClosed(drawerView);
+            Log.d(TAG, "onDrawerClosed: " + getTitle());
+
+            invalidateOptionsMenu();
+        }
+        };
+
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-    @Override
+
+            @Override
     public void onBackPressed() {
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -95,39 +137,57 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
 
         item.setChecked(true);
-       FragmentManager fm = getFragmentManager();
+       FragmentManager fm = getSupportFragmentManager();
 
         int id = item.getItemId();
 
         switch (id) {
             case R.id.nav_homepage:
-                fr = new HomepageFragment();
-                fm.beginTransaction().replace(R.id.flContent, fr).commit();
+                HomepageFragment fr1 = new HomepageFragment();
+                FragmentTransaction fragmentTransaction = fm.beginTransaction();
+                fragmentTransaction.replace(R.id.flContent, fr1);
+                fragmentTransaction.addToBackStack("addHome");
+                fragmentTransaction.commit();
                 break;
 
             case R.id.nav_profile:
                 fr = new ProfileFragment();
-                fm.beginTransaction().replace(R.id.flContent, fr).commit();
+                fragmentTransaction = fm.beginTransaction();
+                fragmentTransaction.replace(R.id.flContent, fr);
+                fragmentTransaction.addToBackStack("addProfile");
+                fragmentTransaction.commit();
                 break;
 
             case R.id.nav_books:
-                fr = new BooksFragment();
-                fm.beginTransaction().replace(R.id.flContent, fr).commit();
+                BooksFragment fr3 = new BooksFragment();
+                fragmentTransaction = fm.beginTransaction();
+                fragmentTransaction.replace(R.id.flContent, fr3);
+                fragmentTransaction.addToBackStack("addBooks");
+                fragmentTransaction.commit();
                 break;
 
             case R.id.nav_friends:
                 fr = new FriendsFragment();
-                fm.beginTransaction().replace(R.id.flContent, fr).commit();
+                fragmentTransaction = fm.beginTransaction();
+                fragmentTransaction.replace(R.id.flContent, fr);
+                fragmentTransaction.addToBackStack("addFriends");
+                fragmentTransaction.commit();
                 break;
 
             case R.id.nav_notifications:
-                fr = new NotificationsFragment();
-                fm.beginTransaction().replace(R.id.flContent, fr).commit();
+                NotificationsFragment frn = new NotificationsFragment();
+                fragmentTransaction = fm.beginTransaction();
+                fragmentTransaction.replace(R.id.flContent, frn);
+                fragmentTransaction.addToBackStack("addNotifications");
+                fragmentTransaction.commit();
                 break;
 
             case R.id.nav_settings:
                 fr = new SettingsFragment();
-                fm.beginTransaction().replace(R.id.flContent, fr).commit();
+                fragmentTransaction = fm.beginTransaction();
+                fragmentTransaction.replace(R.id.flContent, fr);
+                fragmentTransaction.addToBackStack("addSettings");
+                fragmentTransaction.commit();
                 break;
 
             case R.id.nav_logout:
@@ -143,4 +203,7 @@ public class MainActivity extends AppCompatActivity
         return true;
 
     }
-}
+
+
+
+        }

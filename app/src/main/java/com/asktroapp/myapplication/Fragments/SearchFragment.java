@@ -1,18 +1,20 @@
 package com.asktroapp.myapplication.Fragments;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.asktroapp.myapplication.Books;
 import com.asktroapp.myapplication.BooksAdapter;
+import com.asktroapp.myapplication.CustomItemClickListener;
 import com.asktroapp.myapplication.R;
 
 import java.util.ArrayList;
@@ -36,7 +38,16 @@ public class SearchFragment extends Fragment {
 
         booksList = new ArrayList<>();
 
-        adapter = new BooksAdapter(getActivity(), booksList);
+        adapter = new BooksAdapter(getActivity(), booksList, new CustomItemClickListener() {
+
+            @Override
+            public void onItemClick(View v, int position) {
+                Log.d("", "clicked position:" + position);
+                //    long postId = booksList.get(position).getBookImage();
+                // do what ever you want to do with it
+            }
+        });
+
         LinearLayoutManager llm = new LinearLayoutManager(getActivity().getBaseContext());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
 

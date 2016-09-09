@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/deneme_renk"
+    android:minWidth="1500dp"
+    android:minHeight="300dp">
+
+    <TextView
+        android:id="@+id/AddTextView"
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Kitap Ekle"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/NameTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Kitap Adı : "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/AddTextView"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/AddBookName"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/AddTextView"
+        android:layout_toRightOf="@id/NameTextView"/>
+
+    <TextView
+        android:layout_marginTop="42dp"
+        android:id="@+id/AuthorTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Yazarı : "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/NameTextView"/>
+
+    <EditText
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/AddAuthor"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/NameTextView"
+        android:layout_toRightOf="@id/NameTextView"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/CategoryTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Kategori : "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/AddAuthor"/>
+
+    <EditText
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/AddCategory"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/AddAuthor"
+        android:layout_toRightOf="@id/CategoryTextView"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/EditionTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Baskı : "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/CategoryTextView"/>
+
+    <EditText
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/AddEdition"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/CategoryTextView"
+        android:layout_toRightOf="@id/EditionTextView"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="45dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditionTextView"
+        android:layout_toRightOf="@+id/btnCancel"
+        android:text="@string/save"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/EditionTextView"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>

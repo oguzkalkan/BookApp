@@ -2,43 +2,65 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:minWidth="1500dp"
-    android:minHeight="450dp">
-
+    android:minWidth="1000dp"
+    android:minHeight="200dp"
+    android:background="@drawable/deneme_renk"
+    >
+    <ImageView
+        android:id="@+id/PopImageView"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:background="@drawable/deneme_renk"
+        android:layout_marginLeft="100dp"
+        android:scaleType="fitXY"
+        />
     <TextView
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        android:id="@+id/TextViewName"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/PopTextViewBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PopImageView"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:text="Hello"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/PopTextViewAuthorName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:textSize="30sp"
+        android:layout_below="@id/PopTextViewBookName"
+        android:textSize="15sp"
         android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:text="Hello"/>
 
     <Button
-        android:id="@+id/sendRequest"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="50dp"
+        android:id="@+id/PopsendRequest"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/TextViewName"
-        android:text="İstek Gönder"
-        android:background="@android:color/holo_green_dark"
+        android:layout_below="@id/PopTextViewAuthorName"
+        android:text="@string/send_request"
+        android:background="@color/green"
         android:textColor="@color/white"
         />
     <Button
-        android:id="@+id/ButtonCancel"
+        android:id="@+id/PopButtonCancel"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="50dp"
-        android:layout_below="@+id/TextViewName"
-        android:layout_toRightOf="@+id/sendRequest"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/PopTextViewAuthorName"
+        android:layout_toRightOf="@+id/PopsendRequest"
         android:background="@android:color/holo_red_dark"
-        android:text="Kapat"
+        android:text="@string/cancel"
         android:textColor="@color/white"
         />
-
 
 </RelativeLayout>
