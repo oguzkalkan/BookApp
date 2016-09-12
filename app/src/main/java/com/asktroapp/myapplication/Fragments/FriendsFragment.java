@@ -1,5 +1,6 @@
 package com.asktroapp.myapplication.Fragments;
 
+<<<<<<< HEAD
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -8,6 +9,10 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
+=======
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+>>>>>>> origin/master
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

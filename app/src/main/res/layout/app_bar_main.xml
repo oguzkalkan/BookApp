@@ -49,7 +49,11 @@ tools:context="com.asktroapp.myapplication.MainActivity">
     android:layout_height="wrap_content"
     android:layout_gravity="bottom|end"
     android:layout_margin="@dimen/fab_margin"
+<<<<<<< HEAD
     android:src="@drawable/plus_icon"
     />
+=======
+    android:src="@drawable/plus_icon"/>
+>>>>>>> origin/master
 
 </android.support.design.widget.CoordinatorLayout>

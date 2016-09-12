@@ -1,10 +1,14 @@
 package com.asktroapp.myapplication.Fragments;
 
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
+=======
+import android.support.v4.app.Fragment;
+>>>>>>> origin/master
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

@@ -31,6 +31,10 @@ public class BooksFragment extends Fragment {
     private RecyclerView recyclerView;
     private BooksFragmentAdapter adapter;
     private List<Books> booksList;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -40,7 +44,10 @@ public class BooksFragment extends Fragment {
 
         booksList = new ArrayList<>();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
         adapter = new BooksFragmentAdapter(getActivity(), booksList);
 
         RecyclerView.LayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 2);
@@ -72,6 +79,7 @@ public class BooksFragment extends Fragment {
 
         Books b = new Books("Elif","Paulo Coelho","Roman","1. Baskı",bookCovers[0]);
 
+<<<<<<< HEAD
 
         booksList.add(b);
 
@@ -82,6 +90,14 @@ public class BooksFragment extends Fragment {
         booksList.add(b);
 
 
+=======
+        booksList.add(b);
+
+        b = new Books("Simyacı","Paulo Coelho","Dünya-Roman","2. Baskı",bookCovers[1]);
+
+        booksList.add(b);
+
+>>>>>>> origin/master
         b = new Books("To Kill a Mockingbird","Harper Lee","Polisiye","2. Baskı",bookCovers[2]);
 
         booksList.add(b);

@@ -13,7 +13,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import com.asktroapp.myapplication.CircleTransform;
+=======
+>>>>>>> origin/master
 import com.asktroapp.myapplication.MainActivity;
 import com.asktroapp.myapplication.R;
 import com.squareup.picasso.Picasso;

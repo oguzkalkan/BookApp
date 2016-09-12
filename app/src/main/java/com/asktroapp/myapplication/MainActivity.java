@@ -21,13 +21,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+<<<<<<< HEAD
 import com.asktroapp.myapplication.Fragments.AddBookDialogFragment;
+=======
+>>>>>>> origin/master
 import com.asktroapp.myapplication.Fragments.BooksFragment;
 import com.asktroapp.myapplication.Fragments.FriendsFragment;
 import com.asktroapp.myapplication.Fragments.HomepageFragment;
 import com.asktroapp.myapplication.Fragments.NotificationsFragment;
 import com.asktroapp.myapplication.Fragments.ProfileFragment;
+<<<<<<< HEAD
 import com.asktroapp.myapplication.Fragments.RecAddedBooksDialogFragment;
+=======
+>>>>>>> origin/master
 import com.asktroapp.myapplication.Fragments.SearchFragment;
 import com.asktroapp.myapplication.Fragments.SettingsFragment;
 import com.google.firebase.auth.FirebaseAuth;
@@ -98,6 +104,15 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+<<<<<<< HEAD
+=======
+            private void addFragment() {
+
+                fr = new SearchFragment();
+                fm.beginTransaction().replace(R.id.flContent, fr).commit();
+            }
+
+>>>>>>> origin/master
 
             @Override
     public void onBackPressed() {

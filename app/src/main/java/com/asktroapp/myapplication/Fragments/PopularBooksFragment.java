@@ -3,10 +3,13 @@ package com.asktroapp.myapplication.Fragments;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+<<<<<<< HEAD
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+=======
+>>>>>>> origin/master
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,11 +49,22 @@ public class PopularBooksFragment extends Fragment {
             @Override
             public void onItemClick(View view, int position) {
 
+<<<<<<< HEAD
                 Log.d("Click", "clicked position:" + position);
                 String value = booksList.get(position).getBookName();
+=======
+                String value = PopularBooks[position];
+                FragmentManager fm = getFragmentManager();
+                PopularBooksDialogFragment dialogFragment = new PopularBooksDialogFragment();
+                Bundle args = new Bundle();
+                args.putString("key", "Kitap Adı : "+ value);
+                dialogFragment.setArguments(args);
+                dialogFragment.show(fm,"Books");
+>>>>>>> origin/master
 
                 String author = booksList.get(position).getAuthor();
 
+<<<<<<< HEAD
                 int ImageId = booksList.get(position).getBookImage();
                 FragmentManager fm = getFragmentManager();
                 PopularBooksDialogFragment dialogFragment = new PopularBooksDialogFragment();
@@ -62,6 +76,10 @@ public class PopularBooksFragment extends Fragment {
 
                 dialogFragment.show(fm, "Books");
                 long postId = booksList.get(position).getBookImage();
+=======
+
+//                Toast.makeText(getActivity(),value, Toast.LENGTH_SHORT).show();
+>>>>>>> origin/master
             }
         });
 
